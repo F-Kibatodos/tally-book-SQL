@@ -6,7 +6,7 @@
       <div class="dropdown mr-3">
         <a class="btn btn-secondary dropdown-toggle month-sort-menu" href="#" role="button" id="dropdownMenuLink"
           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          {{newDisplayMonth}}
+          {{displayMonth}}
         </a>
         <div class="dropdown-menu month" aria-labelledby="dropdownMenuLink">
           <a class="dropdown-item"
@@ -64,10 +64,11 @@
           {{newDisplaySort}}
         </a>
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=date&sortValue=-1">日期(新到舊)</a>
-          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=date&sortValue=1">日期(舊到新)</a>
-          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=amount&sortValue=-1">花費(多到少)</a>
-          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=amount&sortValue=1">花費(少到多)</a>
+          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=date&sortValue=DESC">日期(新到舊)</a>
+          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=date&sortValue=ASC">日期(舊到新)</a>
+          <a class="dropdown-item"
+            href="/?keyword={{keyword}}&month={{month}}&sortKey=amount&sortValue=DESC">花費(多到少)</a>
+          <a class="dropdown-item" href="/?keyword={{keyword}}&month={{month}}&sortKey=amount&sortValue=ASC">花費(少到多)</a>
         </div>
       </div>
     </div>
