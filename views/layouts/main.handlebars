@@ -19,8 +19,6 @@
         <a class="navbar-brand" href="/"><i class="fas fa-money-check-alt"></i> 記帳本</a>
         <div>
           {{#if isAuthenticated}}
-          <a href="/user/profile/{{user.id}}" class="btn btn-outline-success mr-2"><i class="fas fa-user-cog"></i>
-            設定</a>
           <a href="/user/logout" class="btn btn-outline-primary">登出</a>
           {{else}}
           <a href="/user/login" class="btn btn-outline-primary">登入</a>
