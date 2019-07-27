@@ -52,9 +52,9 @@
 在工作區寫以下程式碼
 
 ```
-drop database if exists nyBook;
-create database nyBook;
-use nyBook;
+drop database if exists myBook;
+create database myBook;
+use myBook;
 ```
 
 接著開啟新的終端機輸入
